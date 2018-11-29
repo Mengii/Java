@@ -1,0 +1,59 @@
+DUAN Mengzhao M1 MIAGE
+
+(td00)
+
+Exercice 1
+
+Q6 : target contient 3 répertoires : classes, generated-sources, maven-status
+
+Q8 : Classpath est un paramètre passé à une machine virtuelle Java qui définit le chemin d'accès au répertoire où se trouvent les classes et les packages Java afin qu'elle les exécute.Au sein de la machine virtuelle, c'est le chargeur de classe qui parcourt les répertoires spécifiés par le classpath pour trouver où sont installées les classes requises par un programme Java. 
+PATH : La variable d'environnement pour l'emplacement des exécutables (sous Windows %PATH%, sous unix et linux $PATH)
+
+Q13 : <maven.compiler.target> 1.7 </maven.compiler.target>
+
+Exercice 2
+
+Q1 : cela marche pas pour l'instant
+
+Exercice 3
+
+Q3 : Il s'affiche " System.out.println(); "
+
+Q4 : "No default proposals"
+
+Q5 : la fonction main s'est écrit 
+
+Q6 : la fonction getToto() peut s'écrire
+
+Q7 : marquer tous les "toto"
+
+(td00bis)
+
+Exercice 1
+
+Q5 : la modification s'affiche (code avant la modification en rouge et après la modification en vert)
+
+Q8 : commit 141bbd5ec8234b8d4227a3d81505ff81dbd24dbe
+     Author: duanme18 <duanme18@b048-07.crio.dauphine.fr>
+     Date:   Wed Oct 3 12:33:14 2018 +0200
+
+   	 initial import
+
+Q9 : git diff 141bbd5ec8234b8d4227a3d81505ff81dbd24dbe 21d0d9249f76826f1cc6b9bdd81abaa2b0e9bab1
+
+Q10 : git diff HEAD^ 21d0d9249f76826f1cc6b9bdd81abaa2b0e9bab1
+
+modification fin du fichier
+
+Exercice 2
+
+Q5 + Q6 : ça marche pas, il y a un conflit entre les deux push sur le ficher REPONSES.txt
+          on peut merge avec la commande git pull
+
+Exercice 3
+
+Q2 : barre verte 
+     après modification : barre rouge
+     la méthode assertTrue teste si l'opération est vrai
+
+

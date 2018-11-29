@@ -1,0 +1,96 @@
+DUAN Mengzhao
+
+TD01
+
+artifactId : nom de fichier local
+
+Exercice 1
+Q1 :   Cela fonctionne car il y a un constructeur par défaut.
+
+Q2 :   Cela fonctionne pas car les champs x et y de la classe Point sont privés.
+       On peut remédier par rendre public ou protected les champs (à éviter) 
+     ou bien on crée de méthodes getter pour accéder aux champs privés.
+
+Q3 :   Les champs doivent être privés pour encapsuler les données de classes 
+     pour éviter le vol et pour créer les méthodes les plus génériques possibles 
+     pour éviter davantage des erreurs en compilation.
+
+Q4 :   Un accesseur est une méthode "getter" : les getters sont des fonctions 
+     qui permette de récupérer la valeur d'une variable declarée "private" dans 
+     une classe.
+       Oui on doit le faire ici.
+
+Q5 :   Quand on crée le constructeur, le constructeur par défaut se disparait, 
+     la ligne du code "Point p=new Point()" ne fonctionne plus.
+
+Q6 :   On a crée un nouveau constructeur, on peut l'appeler en donnant les deux 
+     valeurs des deux paramètres.
+
+Q7 :   On peut créer un champ compteur qui est static qui est une variable de 
+     classe qui ne dépend pas d'instances de la classe.
+
+Q8 :   En fait le point qui est passé en argument du constructeur est créé par le 
+     constructeur présédent, et ce constructeur qu'on vient de créer fait juste 
+     une copie du point passé par paramètre.
+
+Exercice 2
+Q1 :   Il affiche vrai pour p1==p2 et faux pour p1==p3 car l'opérateur == teste 
+     les références des deux variables. Il faut refaire la méthode equals() pour 
+     dire vrai quand deux points ont les mêmes coordonnées.
+
+Q2 :   list.indexOf(p3) renvoie -1 càd p3 ne se trouve pas dans la liste.
+       public int indexOf(Object o) : returns the lowest index i such that 
+     (o==null ? get(i)==null : o.equals(get(i))), or -1 if there is no such index.
+
+Exercice 3
+Q2 :   Il y aura une exception si on dépasse la capacité fixée.
+
+Q5 :   La méthode renvoie false s'il n'y a pas d'élément null dans le tableau et 
+     une exception si on a fait un add(null) avant.
+     
+       public static <T> T requireNonNull(T obj, String message) : checks that the 
+     specified object reference is not null and throws a customized 
+     NullPointerException if it is. 
+
+Q6 :   Veuillez trouver les modifications des 3 méthodes dans la classe LigneBrisee.
+
+Exercice 4 
+Q1 :   Une méthode mutable public void translate(double dx,double dy) pour modifier 
+     les champs de la classe Point et une autre méthode non mutable public Point 
+     translate(double dx,double dy) qui renvoie un nouveau point qui ne modifie 
+     pas les champs (les x et y sont final) de la classe Point.
+
+Q5 :   Le problème est que la méthode translate le centre de deux cercles en même 
+     temps. 
+       Pour l'éviter, il faut faire une copie pour le centre des deux cercles et 
+     donc pas une référence du point (changement du constructeur de Circle).
+
+Q6 :   Le problème est qu'on veut pas la méthode de la classe Point modifie l'objet 
+     de la classe Circle, la seule façon de modifier un cercle est d'utiliser la 
+     méthode translate de la classe Circle elle-même. Donc on renvoie une copie de 
+     center dans la méthode getCenter dans la classe Circle pour éviter le problème.
+
+Q9 :   Oui on doit en faire une méthode statique.
+
+Exercice 5
+Q1 :   Oui c'est intéressant de faire de l'héritage ici.
+
+Q2 :   Le message s'affiche avec la méthode de toString de la classe Circle. 
+     Il faut redéfinir la méthode toString pour la classe Ring.
+
+TD02
+
+Exercice 1
+Q5 :   La méthode paintComponent() est appelée lors du premier affichage du JPanel 
+     et à chaque fois lors qu'on redessine la fenêtre de chacun de ses components
+     ou quand la fenêtre s'est bougée.
+
+Q6 :   Le package java.awt contient la classe Graphics où se trouve les primitives 
+     d'affichage géométriques de dessin et qui contient aussi les Listener et les 
+     Event. 
+       Le package javax.swing qui contient la classe JFrame qui est la fenêtre et 
+     JPanel est un surface où on dessine en utilisant les primitives de Graphics et 
+     manipule les différentes actions réalisées pour les Events. 
+     
+     
+

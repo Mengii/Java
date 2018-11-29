@@ -1,0 +1,19 @@
+DUAN Mengzhao
+
+TD04
+
+Exercice 1
+Q3 :   On doit implémenter l'interface Iterable.
+
+Q4 :   La classe AbstractList répond au problème de manipulation des éléments 
+     d'une liste de n'importe quel objet. 
+       Les méthodes get(index) et size() doivent être implémentées pour 
+     récupérer les éléments de la liste.
+     
+Exercice 2
+Q3 :  Pour AbstrctList Iterator est implementé à partir de get(i) qui n'est 
+    pas efficace pour LinkedList.
+      Par contre AbstractSequentialList est implementé à partir d'Iterator.
+
+if instanceof RandomAcces => AbstractList
+else AbstractSequentialList
